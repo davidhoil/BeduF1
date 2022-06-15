@@ -27,7 +27,7 @@ button {
     display: inline;
   }
   
-  .header > * {
+.header > * {
     display: inline-block;
     font-size: 16px;
     line-height: 45px;
@@ -35,24 +35,24 @@ button {
     vertical-align: middle;
   }
   
-  .logo {
+.logo {
     width: 15%;
   }
   
-  .logo > img {
+.logo > img {
     width: 15%;
   }
   
-  .navbar {
+.navbar {
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight: 500;
   }
   
-  .actions {
+.actions {
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
   }
