@@ -7,7 +7,6 @@ h1 {
     text-align: center;
     font-family: 'Alegreya', serif;
     font-size: 60px;
-    font-weight: 900;
 }
 
 p {
@@ -28,7 +27,13 @@ button {
     font-family: sans-serif;
 }
  
-
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 li {
     display: inline;
     margin: 25px;
@@ -62,6 +67,7 @@ li {
     width: 15%;
     text-align: right;
     font-size: 14px;   
+    font-weight: 600;
 }
 
 .actions > * {
@@ -84,6 +90,56 @@ li {
     border-radius: 5px;
 }
 .main {
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
+}
+
+.publish {
+    /* container styles if any */
+    margin-left: 30px;
+}
+  
+.publish h3 {
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+  margin: auto;
+}
+
+.publish > p {
+  font-size: 18px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publish > form {
+  display: flex;
+  align-items: center;
+}
+
+.publish > form p { 
+  color: #025157;
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+
+.flecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.flecha img {
+    width: 10%;
+    margin-top: 10px;
 }
