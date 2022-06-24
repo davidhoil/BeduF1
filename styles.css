@@ -1,3 +1,4 @@
+
 body {
     background-color: #fffbf7;
 }
@@ -58,14 +59,12 @@ li {
 }
   
 .navbar {
-    width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
   
 .actions {
-    width: 15%;
     text-align: right;
     font-size: 14px;   
     font-weight: 600;
@@ -112,7 +111,7 @@ li {
   font-size: 18px;
   color: #343434;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .publish > form {
@@ -123,7 +122,7 @@ li {
 .publish > form p { 
   color: #025157;
   margin-right: 16px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .promo {
@@ -133,6 +132,12 @@ li {
     align-items: center;
 }
 
+iframe {
+    display: flex;
+    margin: auto;
+    width: 560px;
+    height: 315px;
+}
 
 .flecha {
     display: flex;
@@ -146,11 +151,12 @@ li {
 }
 
 .features {
+    margin-top: 5%;
     background-color: #025157;
     padding: 5% 10%;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    height: 660px;
+    height: 50%;
 }
   
 .features .feature-card {
@@ -202,7 +208,7 @@ li {
     flex: 1;
     width: 40%;
     position: relative;
-    right: -40px;
+    right: -50px;
     height: 80%;
 }
   
@@ -211,3 +217,90 @@ li {
     margin-top: 0;
     height: 100%;
 }
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar, 
+    .actions{
+        display: none;
+    }
+    h1 {
+        font-size: 30px;
+      }
+    .main {
+        margin-top: 100px;
+    }
+
+    /** Media queries previos al banner **/
+    .banner > img {
+        width: 100%;
+    }
+    .banner2 > img {
+        width: 100%;
+    }
+
+    .publish > form {
+        flex-direction: column;
+    }
+
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;  
+    }
+
+    .publish > form > div > input {
+        width: 50%;
+    }
+
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .flecha > video{
+        width: 100%;
+    }
+
+    .publish{
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+        width: 100%;  
+    }
+    .feature-image {
+       display: none;
+    } 
+}
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+  
+  /** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+  
+  /** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+    
+}
+
+
+
