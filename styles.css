@@ -1,14 +1,25 @@
+/** pricing.css */
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {
+    font-size: 60px;
     color: #025157;
     text-align: center;
-    font-family: 'Alegreya', serif;
-    font-size: 60px;
+    font-family: "Alegreya", serif;   
 }
+
+
 
 p {
     color: #8b8b8bcc;
@@ -25,7 +36,7 @@ button {
     margin: 40px 20 px 0;
     font-size: 0;
     height: 45px;
-    font-family: sans-serif;
+    font-family: sans-serif; 
 }
  
 .fixed-header{
@@ -38,8 +49,7 @@ button {
 }
 li {
     display: inline;
-    margin: 25px;
-    color: #025157;
+    margin: 0 25px 0;
 }
   
 .header > * {
@@ -59,20 +69,36 @@ li {
 }
   
 .navbar {
-    text-align: center;
+    text-align: left;
     color: #025157;
+    background-color: #fffbf7;
     font-weight: 500;
+    height: 10%;
 }
-  
+.navbar-light .nav-item .nav-link {
+    color: #025157;
+
+ 
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #025157;
+
+    
+}
+.navbar > * {
+    background-color: #fffbf7;  
+}
 .actions {
     text-align: right;
     font-size: 14px;   
     font-weight: 600;
+
+ 
 }
 
 .actions > * {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .actions a {
@@ -86,9 +112,10 @@ li {
     padding-right: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border:0;
+    border: 0;
     border-radius: 5px;
 }
+
 .main {
     margin-top: 285px;
     text-align: center;
@@ -102,13 +129,13 @@ li {
 .publish h3 {
   font-family: "Alegreya", serif;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 50px;
   color: #025157;
-  margin: auto;
+  margin-bottom:20px ;
 }
 
 .publish > p {
-  font-size: 18px;
+  font-size: 16px;
   color: #343434;
   line-height: 1.5;
   margin-bottom: 40px;
@@ -116,18 +143,17 @@ li {
 
 .publish > form {
   display: flex;
-  align-items: center;
 }
 
 .publish > form p { 
   color: #025157;
-  margin-right: 16px;
+  margin-right: 10px;
   font-size: 18px;
 }
 
 .promo {
     display: flex;
-    width: 70%;
+    width: 75%;
     margin: 100px auto;
     align-items: center;
 }
@@ -218,17 +244,184 @@ iframe {
     height: 100%;
 }
 
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+  
+.success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+  
+.success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+  
+.success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+  
+.success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+}
+  
+  /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+.success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+}
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+.success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+}
+  
+.success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+  
+.success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+ }
+  
+.success-stories .card .card-body .results p {
+    margin: 0;
+}
+  
+.success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+}
+  
+.success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+ }
+  
+  /* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+.success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+}
+  
+/* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+.success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+}
+  
+/* Los círculos deben recibir la imagen y ajustarla al tamaño */
+.success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+}
+  
+.success-stories .card .card-body .card-circle.summit {
+    background-color: #81d742;
+    border: 5px solid #81d742;
+}
+  
+.success-stories .card .card-body .card-circle.mambe {
+    background-color: #ef7179;
+    border: 5px solid #ef7179;
+}
+  
+.success-stories .card .card-body .card-circle.everly img,
+.success-stories .card .card-body .card-circle.summit img,
+.success-stories .card .card-body .card-circle.mambe img {
+    object-fit: contain;
+    width: 100%;
+}
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar, 
+   /* .navbar, 
     .actions{
         display: none;
+    }*/
+   
+    .logo{
+        width: 40%;
     }
+
     h1 {
         font-size: 30px;
-      }
+    }
+
     .main {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     /** Media queries previos al banner **/
@@ -270,6 +463,12 @@ iframe {
         line-height: 1.2;
     }
 
+    iframe{
+        width: 100%;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .features {
         grid-template: repeat(4, 1fr) / 1fr;
         padding-left: 0;
@@ -280,6 +479,9 @@ iframe {
     .feature-image {
        display: none;
     } 
+    .success-stories {
+        flex-direction: column;
+    }
 }
   
   /** dispositivos pequeños en vista landscape (horizontal) */
@@ -289,7 +491,7 @@ iframe {
   
   /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-    
+   
 }
   
   /** dispositivos grandes (desktops) */
@@ -300,6 +502,13 @@ iframe {
   /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
     
+}
+
+@media (max-width: 991px) {
+    .success-stories {
+      flex-direction: column;
+      padding: 5% 15px;
+    }
 }
 
 
