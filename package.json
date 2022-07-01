@@ -1,0 +1,22 @@
+{
+  "name": "bedu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidhoil/BeduS1.git"
+  },
+  "author": "Angel David Hoil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidhoil/BeduS1/issues"
+  },
+  "homepage": "https://github.com/davidhoil/BeduS1#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
