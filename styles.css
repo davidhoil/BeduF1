@@ -32,6 +32,10 @@ button {
     background-color: #025157;
 }
 
+.texto-boton:hover{
+    background-color: #67b54b;
+}
+
 .header {
     margin: 40px 20 px 0;
     font-size: 0;
